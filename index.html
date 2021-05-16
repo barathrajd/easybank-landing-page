@@ -12,8 +12,51 @@
 
     <title>Frontend Mentor | Easybank landing page</title>
     <link rel="stylesheet" href="main.css" />
+
+    <script src="main.js" defer></script>
   </head>
   <body>
-    Easy Bank
+    <div class="container">
+      <!-- Navbar -->
+
+      <header class="header">
+        <img
+          class="header__logo"
+          style="z-index: 100000"
+          src="images/logo.svg"
+          alt="logo"
+        />
+        <div class="overlay hidden"></div>
+        <nav class="navbar" id="navbar">
+          <a href="#" class="navbar__link">Home</a>
+
+          <a href="#" class="navbar__link">About</a>
+
+          <a href="#" class="navbar__link">Contact</a>
+
+          <a href="#" class="navbar__link">Blog</a>
+
+          <a href="#" class="navbar__link">Careers</a>
+        </nav>
+        <button class="cta header__cta">Request Invite</button>
+
+        <button id="menu" style="z-index: 100000">
+          <span class="icon-group" id="hamburger">
+            <img
+              src="images/icon-hamburger.svg"
+              alt="icon-hamburger"
+              class="icon-ham"
+            />
+          </span>
+          <span class="icon-group hidden" id="close">
+            <img
+              src="images/icon-close.svg"
+              alt="icon-close"
+              class="icon-close"
+            />
+          </span>
+        </button>
+      </header>
+    </div>
   </body>
 </html>

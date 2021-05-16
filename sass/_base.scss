@@ -1,12 +1,12 @@
 /* Base Setup */
-:root {
-  --color-primary-1: hsl(136, 65%, 51%);
-  --color-primary-2: hsl(192, 70%, 51%);
-  --color-secondary: hsl(233, 26%, 24%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-text-dark: hsl(233, 8%, 62%);
-  --color-text-light: hsl(220, 16%, 96%);
-}
+
+$color-primary-1: hsl(136, 65%, 51%);
+$color-primary-2: hsl(192, 70%, 51%);
+$color-secondary: hsl(233, 26%, 24%);
+$color-white: hsl(0, 0%, 100%);
+$color-text-dark: hsl(233, 8%, 62%);
+$color-text-dark-hover: hsl(233, 8%, 30%);
+$color-text-light: hsl(220, 16%, 96%);
 
 @font-face {
   font-family: 'Public Sans';
@@ -42,4 +42,13 @@ body {
   font-family: Public Sans;
   font-size: 1.8rem;
   font-weight: 400;
+  background-color: $color-text-dark;
+}
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
 }
