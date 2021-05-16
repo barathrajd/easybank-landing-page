@@ -79,17 +79,6 @@ a {
   width: 18rem;
 }
 
-.header .overlay {
-  position: fixed;
-  content: '';
-  left: 0;
-  height: 200vh;
-  width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(45, 49, 77, 0.5)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(360deg, rgba(45, 49, 77, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: -2;
-}
-
 .header .icon-ham,
 .header .icon-close {
   width: 1.5rem;
@@ -133,11 +122,24 @@ a {
   .navbar {
     position: absolute;
     top: 11rem;
-    right: 2.1rem;
     width: 90%;
+    left: 0;
+    right: 0;
     background-color: white;
     border-radius: 1rem;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
     -webkit-transition: all 300ms ease-in-out;
@@ -194,5 +196,16 @@ a {
 
 .hidden {
   display: none;
+}
+
+.overlay {
+  position: absolute;
+  content: '';
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2d314d), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(360deg, #2d314d 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -2;
 }
 /*# sourceMappingURL=main.css.map */
